@@ -39,9 +39,9 @@ def cityreader(cities=[]):
   # `cities` list
 
   with open("cities.csv", "r") as csv_file:
-    open_file = csv.reader(csv_file)
-    next(open_file)
-    for row in open_file:
+    city_reader_open_file = csv.reader(csv_file)
+    next(city_reader_open_file)
+    for row in city_reader_open_file:
       name = row[0]
       lat = float(row[3])
       lon = float(row[4])
